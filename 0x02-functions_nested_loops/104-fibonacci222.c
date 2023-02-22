@@ -1,23 +1,22 @@
 #include <stdio.h>
 /**
- * main - prints the first 98 fibbo numbers starting
- * with 1 ad 2, separated by a comma followed by a space
- * Return: always 0.
+ * main - print the first Fibonacci numbers
+ * 1 and 2, seperated br a comma followed by a space
+ * Return: nothing as success 0
  */
-
 int main(void)
 {
 	int count;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	unsigned long fib1 = 0, fib2 = 1, summ;
 	unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
 	unsigned long half1, half2;
 
 	for (count = 0; count < 92; count++)
 	{
-		sum = fib1 + fib2;
-		printf("%lu, ", sum);
+		summ = fib1 + fib2;
+		printf("%lu, ", summ);
 		fib1 = fib2;
-		fib2 = sum;
+		fib2 = summ;
 	}
 	fib1_half1 = fib1 / 10000000000;
 	fib2_half1 = fib2 / 10000000000;

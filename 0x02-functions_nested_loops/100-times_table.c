@@ -1,37 +1,38 @@
 #include "main.h"
 /**
- * print_times_table - a function that prints the n
- * @n: parameter to be checked
- * Return: alway 0
+ * print_times_table - prints the times table of the inputs
+ * starting with 0.
+ * @n: The value of times to be printed
+ * Return: always 0
  */
 void print_times_table(int n)
 {
-	int num, multy, prode;
+	int num, mult, prod;
 
 	if (n >= 0 && n <= 15)
 	{
 		for (num = 0; num <= n; num++)
 		{
 			_putchar('0');
-			for (multy = 1; multy <= n; multy++)
+			for (mult = 1; mult <= n; mult++)
 			{
 				_putchar(',');
 				_putchar(' ');
-				prode = num * multy;
-				if (prode <= 99)
+				prod = num * mult;
+				if (prod <= 99)
 					_putchar(' ');
-				if (prode <= 9)
+				if (prod <= 9)
 					_putchar(' ');
-				if (prode >= 100)
+				if (prod >= 100)
 				{
-					_putchar((prode / 100) + '0');
-					_putchar(((prode / 10)) % 10 + '0');
+					_putchar((prod / 100) + '0');
+					_putchar(((prod / 10)) % 10 + '0');
 				}
-				else if (prode <= 99 && prode >= 10)
+				else if (prod <= 99 && prod >= 10)
 				{
-					_putchar((prode / 10) + '0');
+					_putchar((prod / 10) + '0');
 				}
-				_putchar((prode / 10) + '0');
+				_putchar((prod % 10) + '0');
 			}
 			_putchar('\n');
 		}

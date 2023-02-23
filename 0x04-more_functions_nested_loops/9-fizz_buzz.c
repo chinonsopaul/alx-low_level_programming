@@ -1,8 +1,9 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
+
 /**
  * main - a program that prints the numbers from
- * Return: always 0 as sucees
+ * Return: always 0 as (sucees)
  */
 int main(void)
 {

@@ -6,5 +6,6 @@
  */
 char *rot13(char *)
 {
-	int i;
+	int i;:wq!
+
 }

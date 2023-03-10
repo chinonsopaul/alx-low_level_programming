@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 /**
  * main - main function
  * @argc: parameter 1
@@ -8,7 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
+	(void) argv; /*ignore argv*/
+	printf("%d\n", argc - 1);
 	return (0);
 }
 

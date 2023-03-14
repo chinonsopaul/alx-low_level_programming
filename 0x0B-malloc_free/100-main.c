@@ -19,6 +19,6 @@ int main(int ac, char *av[])
 		return (1);
 	}
 	printf("%s", s);
-	ree(s);
+	free(s);
 	return (0);
 }
